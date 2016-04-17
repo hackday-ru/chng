@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/background">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="5dp"></TableLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:text="Ваш первый психологический портрет"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Расположите животных в порядке, соответстующем вашему отношению к ним (от 1 до 3)"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.06"
+        android:textSize="15dp"
+        android:layout_marginLeft="5dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Корова"
+            android:id="@+id/radioButton"
+            android:checked="false"
+            android:layout_marginLeft="5dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Тигр"
+            android:id="@+id/radioButton2"
+            android:checked="false"
+            android:layout_marginLeft="5dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Овца"
+            android:id="@+id/radioButton3"
+            android:checked="false"
+            android:layout_marginLeft="5dp" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.Напишите по одному прилагательному к каждому слову. т.е. какая в вшем представлении собака ит.д."
+        android:id="@+id/textView3"
+        android:layout_weight="0.06"
+        android:textSize="15dp"
+        android:layout_marginLeft="5dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.002"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:text="а. собака"
+            android:id="@+id/textView4"
+            android:layout_weight="1"
+            android:textIsSelectable="false"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.002"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:text="б. кошка"
+            android:id="@+id/textView5"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText3"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.002"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:text="в. крыса"
+            android:id="@+id/textView6"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText4"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.Соотнесите имена своих друзей с определенным цветом (цвет - имя)"
+        android:id="@+id/textView7"
+        android:layout_weight="0.06"
+        android:textSize="15dp"
+        android:layout_marginLeft="5dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:layout_width="29dp"
+            android:layout_height="28dp"
+            android:text="а."
+            android:id="@+id/textView9"
+            android:layout_marginLeft="5dp" />
+
+        <ImageView
+            android:layout_width="163dp"
+            android:layout_height="28dp"
+            android:id="@+id/imageView2"
+            android:background="#ee2121"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText6"
+            android:layout_marginTop="7dp"
+            android:textSize="14dp"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:layout_width="29dp"
+            android:layout_height="28dp"
+            android:text="б."
+            android:id="@+id/textView8"
+            android:layout_marginLeft="5dp" />
+
+        <ImageView
+            android:layout_width="163dp"
+            android:layout_height="28dp"
+            android:id="@+id/imageView"
+            android:background="#f7f70d"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText5"
+            android:layout_marginTop="7dp"
+            android:textSize="14dp"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:layout_width="29dp"
+            android:layout_height="28dp"
+            android:text="в."
+            android:id="@+id/textView10"
+            android:layout_marginLeft="5dp" />
+
+        <ImageView
+            android:layout_width="163dp"
+            android:layout_height="28dp"
+            android:id="@+id/imageView3"
+            android:background="#21f916"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText7"
+            android:layout_marginTop="7dp"
+            android:textSize="14dp"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Отправить"
+        android:id="@+id/submitButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:textColor="#0a0000" />
+
+</LinearLayout>

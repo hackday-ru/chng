@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="335dp"
+        android:layout_height="245dp"
+        android:id="@+id/imageView5"
+        android:background="@drawable/ramka3"
+        android:layout_below="@+id/textView14"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="233dp"
+        android:layout_height="56dp"
+        android:text="РЕЗУЛЬТАТ"
+        android:gravity="center"
+        android:textSize="26dip"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dislikeButton"
+        android:background="@drawable/dislike"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_marginTop="23dp"
+        android:layout_toStartOf="@+id/textView14" />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/likeButton"
+        android:background="@drawable/like"
+        android:layout_alignTop="@+id/dislikeButton"
+        android:layout_alignEnd="@+id/imageView5"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/previous"
+        android:layout_width="233dp"
+        android:layout_height="63dp"
+        android:text="Вернуться назад"
+        android:gravity="center"
+        android:textSize="26dip"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/dislikeButton"
+        android:layout_marginTop="31dp"
+        android:layout_alignStart="@+id/dislikeButton"
+        android:layout_alignEnd="@+id/likeButton" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/dislikeCounter"
+        android:layout_alignBottom="@+id/dislikeButton"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_alignTop="@+id/dislikeButton"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/likeCounter"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/previous"
+        android:layout_toStartOf="@+id/likeButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Здесь задание должно было быть"
+        android:id="@+id/rr"
+        android:layout_marginTop="10dp"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:autoText="false" />
+
+</RelativeLayout>

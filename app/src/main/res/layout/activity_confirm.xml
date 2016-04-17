@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="384dp"
+        android:layout_height="62dp"
+        android:text="ЗАДАНИЕ НА ДЕНЬ ЗАГРУЖАЕТСЯ"
+        android:id="@+id/taskDesc"
+        android:textSize="20dp"
+        android:textColor="@color/accent"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"></FrameLayout>
+
+    <Button
+        android:layout_width="184dp"
+        android:layout_height="68dp"
+        android:id="@+id/upload"
+        android:layout_gravity="center_horizontal"
+        android:textSize="22dp"
+        android:text="загрузить"
+        android:textColor="#fefefe"
+        android:typeface="sans"
+        android:textColorLink="#862727"
+        android:background="@drawable/ramka1"
+        android:layout_marginTop="12dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadImage"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="130dp" />
+</LinearLayout>

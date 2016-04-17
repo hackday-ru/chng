@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#0b343f"
+        android:id="@+id/frameLayout">
+
+        <Button
+            android:layout_width="26dp"
+            android:layout_height="24dp"
+            android:id="@+id/button3"
+            android:background="@drawable/gamburger"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="left|top" />
+
+        <TextView
+            android:layout_width="117dp"
+            android:layout_height="match_parent"
+            android:text="Друзья"
+            android:id="@+id/textView13"
+            android:layout_gravity="center_horizontal|top"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="86dp"
+            android:gravity="center"
+            android:layout_marginLeft="-6dp" />
+
+        <Button
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/addFriend"
+            android:layout_gravity="right|center_vertical"
+            android:text="+"
+            android:background="#0b343f"
+            android:textSize="50dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="-6dp" />
+
+        <EditText
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/friendName"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="45dp"
+            android:backgroundTint="#ffffff" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frameLayout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/friendLayout"></LinearLayout>
+
+</RelativeLayout>
